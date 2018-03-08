@@ -1,3 +1,9 @@
 [submodule "Arduino-Makefile"]
 	path = Arduino-Makefile
 	url = https://github.com/WeAreLeka/Arduino-Makefile
+[submodule "lib/Adafruit-Motor-Shield-library"]
+	path = lib/Adafruit-Motor-Shield-library
+	url = https://github.com/adafruit/Adafruit-Motor-Shield-library
+[submodule "lib/AFMotor"]
+	path = lib/AFMotor
+	url = https://github.com/adafruit/Adafruit-Motor-Shield-library

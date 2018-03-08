@@ -4,7 +4,8 @@ import ycm_core
 # You can set a directory with a lot of libraries to be search recursively here
 ArduinoLibDir = [
   # "/Applications/Arduino.app/Contents/Java/libraries"
-  "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries"
+#  "/Applications/Arduino.app/Contents/Java/hardware/arduino/avr/libraries"
+  "/usr/share/arduino/hardware/arduino/avr/libraries"
 ]
 
 # This is the list of all directories to search for header files
