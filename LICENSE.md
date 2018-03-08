@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2014 Ladislas de Toldi - ladislas at weareleka dot com
+Copyright (c) 2018 Benedikt Volkmer - https://github.com/bvolkmer/
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
