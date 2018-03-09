@@ -7,14 +7,17 @@ Shell::Command Shell::evaluate(char* input) {
 	char** args;
 	int argc = Shell::split(input, &args);
 	if (argc <= 0) {
+		delete args;
 		return Shell::Command::INVALID;
 	}
 	Serial.print("Command: ");
 	Serial.println(args[0]);
 	Serial.flush();
 	if (strncmp(args[0], "debug", 5) == 0) {
+		delete args;
 		return Shell::Command::DEBUG;
 	}
+	delete args;
 	return Shell::Command::INVALID;
 }
 
