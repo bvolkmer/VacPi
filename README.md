@@ -1,5 +1,7 @@
 # VacPi
 
+[![Build Status](https://travis-ci.org/bvolkmer/VacPi.svg?branch=master)](https://travis-ci.org/bvolkmer/VacPi)
+
 A firmware of a vaccuum robot based on the Arduino Nano.
 
 ## Structure
