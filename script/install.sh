@@ -15,7 +15,7 @@ AVR_GCC_URL="http://arduino.cc/download.php?f=/$AVR_GCC_FILE"
 echo "Installing Arduino 1.8.5..."
 
 wget "$ARDUINO_URL" -O "$ARDUINO_FILE"
-tar -xzf "$ARDUINO_FILE"
+tar -xJf "$ARDUINO_FILE"
 sudo mv "$ARDUINO_BASENAME/" "$ARDUINO"
 
 echo "Installing avr-gcc from Arduino 1.8.5..."
