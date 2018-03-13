@@ -17,6 +17,10 @@ Shell::Command Shell::evaluate(char* input) {
 		delete args;
 		return Shell::Command::DEBUG;
 	}
+	if (strncmp(args[0], "test", 4) == 0) {
+		delete args;
+		return Shell::Command::TEST;
+	}
 	delete args;
 	return Shell::Command::INVALID;
 }

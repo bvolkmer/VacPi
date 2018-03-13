@@ -7,4 +7,6 @@ Makefile
 doc/
 debug.txt
 .ycm_extra_conf.pyc
+.ycm_extra_conf.py
+compile_commands.json
 .ropeproject

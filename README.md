@@ -2,6 +2,10 @@
 
 A firmware of a vaccuum robot based on the Arduino Nano.
 
+## Structure
+
+This project is structured in an abstract/hardware independent library (`lib/VacPi`) and the actual hardware integration (`src/VacPi`), that fit my physical robot.
+
 ## Acknowledgement
 
 This project is based on the incredible [Bare Arduino Project](https://github.com/ladislas/Bare-Arduino-Project). See Licence below.
