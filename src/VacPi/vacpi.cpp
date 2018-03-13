@@ -4,6 +4,7 @@
 #include "AFMotor.h"
 #include "Shell.h"
 #include "VacPi.h"
+#include "spiral_array.h"
 
 #define CS_SENSORS 1
 #define SENSOR_LEFT 6
@@ -12,10 +13,6 @@
 #define SENSOR_FRONT 4
 #define SENSOR_VACUUM 3
 #define SENSOR_THRES 100
-#define A 1.86 // x = 100, y = 255
-#define B 20 // x = 0, y = 20
-#define C 1.55 // x = 50, y = 180
-#define SPIRAL_FKT(x) A*pow(x,C)+B
 
 #define MIN_SPEED 20
 #define SLOW 50
@@ -77,7 +74,8 @@ public:
         delay(FOURTY_FIVE_DEG_DELAY);
     }
     void spiral(VacPi::Turn turn, int timer) {
-        int spiral_slow = SPIRAL_FKT(timer);
+        if (timer < 0 || timer > 100) return;
+        int spiral_slow = static_cast<int>(spiral_factor[timer]*MAX_SPEED);
         if (spiral_slow > MAX_SPEED) spiral_slow = MAX_SPEED;
         if (turn == VacPi::RIGHT) {
             engine_left.setSpeed(MAX_SPEED);;
