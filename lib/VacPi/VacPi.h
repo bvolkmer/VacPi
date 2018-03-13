@@ -84,6 +84,7 @@ namespace VacPi {
                 State* run(bool obstruction);
             private:
                 const int timerThreshold = 1000;
+                const int straightTimerThreshold = 5;
                 int straightTimer = 0;
                 const int obstructionTimerThreshold = 50;
                 int obstructionTimer = 0;

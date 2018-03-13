@@ -49,7 +49,7 @@ State* EdgeRun::run(bool obstruction) {
         return new Circling(movements);
     }
     straightTimer++;
-    if (straightTimer <= 5) {
+    if (straightTimer <= straightTimerThreshold) {
         movements->moveStraight(Forward);
     } else {
         movements->curve(Forward, RIGHT, Slow);
