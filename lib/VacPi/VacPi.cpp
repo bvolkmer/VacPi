@@ -18,8 +18,8 @@ Looper::~Looper() {
 }
 
 void Looper::loop(Obstruction obstruction) {
-    //TOOD: Implement behaviour while flying
-    if (obstruction.dustLevel || obstruction.center || obstruction.left || obstruction.right) {
+    //TOOD: Implement behaviour when reaching a step
+    if (obstruction.dustLevel || (obstruction.left && obstruction.right)) {
         movements->stopAll();
     } else {
         movements->startVacuum();
