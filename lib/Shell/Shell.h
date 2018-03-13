@@ -5,8 +5,9 @@
 namespace Shell {
 
 	enum Command {
-		DEBUG = 0,
-		INVALID = -1,
+		INVALID,
+		DEBUG,
+        TEST
 	};
 
 	Command evaluate(char* input);
