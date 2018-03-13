@@ -8,6 +8,7 @@ ARDUINO_URL="http://arduino.cc/download.php?f=/$ARDUINO_FILE"
 
 #AVR_GCC_BASENAME="arduino-1.5.8"
 #AVR_GCC_FILE="$AVR_GCC_BASENAME-linux64.tgz"
+AVR_GCC_BASENAME="$ARDUINO_BASENAME"
 AVR_GCC_FILE="$ARDUINO_FILE"
 AVR_GCC_URL="http://arduino.cc/download.php?f=/$AVR_GCC_FILE"
 
